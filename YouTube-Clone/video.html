@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Video</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navigation">
+        <div class="nav-left">
+            <button class="menu-btn">
+                <img src="material/menu.png" alt="Menu">
+            </button>
+            <a href="/" class="Youtube-logo">
+                <img src="material/youtube-logo.png" alt="Youtube Logo" height="50px">
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-bar1" placeholder="Search">
+            <button id="search-btn">
+                <img src="material/search.png" alt="search">
+            </button>
+            <div class="voicebtn">
+                <img src="material/mic.png" alt="mic">
+            </div>
+        </div>
+        <div id="profile">
+            <button class="icon-btn">
+                <img src="material/create.png" alt="create">
+            </button>
+            <button class="icon-btn">
+                <img src="material/more.png" alt="more">
+            </button>
+            <button class="icon-btn">
+                <img src="material/notification.png" alt="notification">
+            </button>
+            <button class="profile-btn">
+                <img src="material/profile.png" alt="profile-icon">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Video Content -->
+    <div class="video-page-container">
+        <div class="video-main-content">
+            <div id="video-container"></div>
+            <div class="video-details">
+                <h1 id="video-title"></h1>
+                <div class="video-actions">
+                    <div class="channel-info">
+                        <img id="channel-avatar" src="" alt="Channel Avatar">
+                        <div class="channel-text">
+                            <h3 id="channel-name"></h3>
+                            <p id="subscriber-count"></p>
+                        </div>
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                    <div class="video-buttons">
+                        <button class="like-btn">
+                            <img src="material/like.png" alt="Like">
+                            <span id="like-count">0</span>
+                        </button>
+                        <button class="dislike-btn">
+                            <img src="material/dislike.png" alt="Dislike">
+                        </button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+                <div class="video-description" id="video-description"></div>
+            </div>
+        </div>
+        <div class="related-videos" id="related-videos">
+            <!-- Related videos will be loaded here -->
+        </div>
+    </div>
+    <script src="video.js"></script>
+</body>
+</html>
